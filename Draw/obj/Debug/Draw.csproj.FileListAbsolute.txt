@@ -1,0 +1,10 @@
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.AssemblyReference.cache
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.MainForm.resources
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.Properties.Resources.resources
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.GenerateResource.cache
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.CoreCompileInputs.cache
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\Draw.exe.config
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\Draw.exe
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\Draw.pdb
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.exe
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.pdb
