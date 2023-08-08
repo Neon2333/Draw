@@ -22,6 +22,7 @@ namespace Draw
         private int g_millSecWait = 0;
         //画布
         private Graphics graphics;
+        //画笔
         Pen pen;
         //鼠标左键按下标志
         private bool flagLeftDown = false;
@@ -46,28 +47,41 @@ namespace Draw
         //初始化页面
         private void initForm()
         {
-            initFreeDraw();
+
+            //初始化自由画线参数
+            initFreeDraw(); 
         }
 
-        //画点函数
-        void drawCircleAndFill(int x, int y, int r, Graphics gp)
+        private void setPen(Color color, int thickness)
         {
-            gp.DrawEllipse(new Pen(Color.Red, 1), x - r, y - r, (int)(1.414 * r), (int)(1.414 * r));  //r为圆点半径
-            gp.FillEllipse(new SolidBrush(Color.Red), x - r, y - r, (int)(1.414 * r), (int)(1.414 * r));
+            //线粗细、颜色
+            pen = new Pen(color, thickness);
         }
 
+        /// <summary>
+        /// 清空画布
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button_flush_Click(object sender, EventArgs e)
+        {
+            graphics.Clear(Color.White);
+        }
+
+        #region freeDraw
         /// <summary>
         /// 初始化自由绘制mode参数
         /// 可以编写config等工具栏设置这些参数
         /// </summary>
         private void initFreeDraw()
         {
+            int g_millSecWait = 1000 / g_frameRate;
+
             cancelTokenSourceFreeDraw = new CancellationTokenSource();
             cancelTokenFreeDraw = cancelTokenSourceFreeDraw.Token;
             graphics = panel_freeDraw.CreateGraphics();
-            //线粗细、颜色
-            pen = new Pen(Color.Blue, 2);
-            int g_millSecWait = 1000 / g_frameRate;
+
+            setPen(Color.Black, 2);
         }
 
         /// <summary>
@@ -94,7 +108,7 @@ namespace Draw
                             if (flagLeftDown && (pXFormer != pX || pYFormer != pY))
                             {
                                 //连点成线
-                                //drawCircleAndFill(pXFormer, pYFormer, 2, graphics);
+                                //BaseDrawFunc.drawCircleAndFill(pXFormer, pYFormer, 2, graphics);
                                 //折线
                                 graphics.DrawLine(pen, pXFormer, pYFormer, pX, pY);
 
@@ -191,17 +205,11 @@ namespace Draw
             cancelTokenSourceFreeDraw.Cancel();
             currentMode = FormMode.None;
         }
+        #endregion
 
-        
-        /// <summary>
-        /// 清空画布
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Button_flush_Click(object sender, EventArgs e)
-        {
-            graphics.Clear(Color.White);
-        }
+
+
+
 
     }
 
