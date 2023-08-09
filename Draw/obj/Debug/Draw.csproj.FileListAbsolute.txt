@@ -49,3 +49,5 @@ E:\WorkSpace\Demo\Draw\Draw\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
 E:\WorkSpace\Demo\Draw\Draw\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
 E:\WorkSpace\Demo\Draw\Draw\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.CopyComplete
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.ColorSelectPanel.resources
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.exe.licenses
