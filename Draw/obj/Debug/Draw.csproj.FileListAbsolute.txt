@@ -1,4 +1,3 @@
-E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.AssemblyReference.cache
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.MainForm.resources
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.Properties.Resources.resources
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.GenerateResource.cache
@@ -51,3 +50,10 @@ E:\WorkSpace\Demo\Draw\Draw\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.CopyComplete
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.ColorSelectPanel.resources
 E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.exe.licenses
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\DevExpress.XtraBars.v20.1.dll
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\DevExpress.XtraBars.v20.1.xml
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+E:\WorkSpace\Demo\Draw\Draw\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+E:\WorkSpace\Demo\Draw\Draw\obj\Debug\Draw.csproj.AssemblyReference.cache

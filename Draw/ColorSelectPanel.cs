@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Draw
         public ColorSelectPanel()
         {
             InitializeComponent();
+        }
+
+        private void initColorSelectPanel()
+        {
+            //初始化线型
+
         }
     }
 }

@@ -58,6 +58,10 @@ namespace Draw
         {
             //线粗细、颜色
             pen = new Pen(color, thickness);
+            //设置画笔平滑，去掉毛刺、锯齿
+            pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            pen.LineJoin = System.Drawing.Drawing2D.LineJoin.Round;
         }
 
         /// <summary>
@@ -77,7 +81,7 @@ namespace Draw
         /// <param name="e"></param>
         private void panel_freeDraw_MouseMove(object sender, MouseEventArgs e)
         {
-            //更新鼠标当前位置
+            //刷新鼠标位置实时显示
             pX = e.X;
             pY = e.Y;
             textBox_X.Text = pX.ToString();
@@ -139,7 +143,8 @@ namespace Draw
         private void initFreeDraw()
         {
             graphics = panel_freeDraw.CreateGraphics();
-            setPen(Color.Black, 2);
+            setPen(Color.Black, 16);
+            
 
             //int g_millSecWait = 1000 / g_frameRate;
 
@@ -151,7 +156,10 @@ namespace Draw
         {
             if (flagLeftDown && (pXFormer != pX || pYFormer != pY))
             {
-                graphics.DrawLine(pen, pXFormer, pYFormer, pX, pY);
+                //根据坐标连线
+                //graphics.DrawLine(pen, pXFormer, pYFormer, pX, pY);
+                //改为画曲线
+                graphics.DrawCurve(pen, new Point[] { new Point(pXFormer, pYFormer), new Point(pX, pY) });
                 //更新坐标（只有画过线的坐标才更新，这样不会点和点之间不会有间断）
                 pXFormer = pX;
                 pYFormer = pY;
